@@ -100,25 +100,25 @@
 
 
 
-  <meta name="description" content="以下都是各种大佬的友链(就我最菜了$qwq$) $AK   KING$ 伤病都毁不掉的天才 $AK$ 虐全场 信竞体育两不误 文体两开花 $f AK e$大佬 神仙 又帅又强的巨佬(矩阵加速巨佬) 数据结构、模板神仙(目前$A$了45模板题)(模板随便刷，刷着玩) 喜捷捷(详见这里) 假装AFO大佬 书法家 早期UP主(打打广告：bilibili) 次机打县 艺术就是派大星 体育健将 杰伦的小粉丝">
-<meta name="keywords" content="友链,洛谷">
+  <meta name="description" content="首先提一下本题的几个容易忽略的坑点导致错误的地方吧1. 问最终校门外留下的树苗多少棵？  是不是一开始看到时就不经过脑子的直接输出校门口的树的棵数啦(其实题目有说一开始就存在的是树，后面种下去的是树苗)(然后你就会获得80或者20分的好成绩)，可能只有我一个人看错了吧$QWQ$ 2. 植树者种上又被砍掉的树苗有多少棵？  这个可能错的人比较少，它的意思是每逢砍树者把树苗砍了就把$ans++$，并不">
+<meta name="keywords" content="洛谷,题解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="友链(洛谷)">
-<meta property="og:url" content="http://yoursite.com/2019/04/03/友链-洛谷/index.html">
+<meta property="og:title" content="题解 P1276 【校门外的树（增强版）】">
+<meta property="og:url" content="http://yoursite.com/2019/03/08/题解-P1276-【校门外的树（增强版）】/index.html">
 <meta property="og:site_name" content="一个蒟蒻的Blog">
-<meta property="og:description" content="以下都是各种大佬的友链(就我最菜了$qwq$) $AK   KING$ 伤病都毁不掉的天才 $AK$ 虐全场 信竞体育两不误 文体两开花 $f AK e$大佬 神仙 又帅又强的巨佬(矩阵加速巨佬) 数据结构、模板神仙(目前$A$了45模板题)(模板随便刷，刷着玩) 喜捷捷(详见这里) 假装AFO大佬 书法家 早期UP主(打打广告：bilibili) 次机打县 艺术就是派大星 体育健将 杰伦的小粉丝">
+<meta property="og:description" content="首先提一下本题的几个容易忽略的坑点导致错误的地方吧1. 问最终校门外留下的树苗多少棵？  是不是一开始看到时就不经过脑子的直接输出校门口的树的棵数啦(其实题目有说一开始就存在的是树，后面种下去的是树苗)(然后你就会获得80或者20分的好成绩)，可能只有我一个人看错了吧$QWQ$ 2. 植树者种上又被砍掉的树苗有多少棵？  这个可能错的人比较少，它的意思是每逢砍树者把树苗砍了就把$ans++$，并不">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-03T12:51:03.911Z">
+<meta property="og:updated_time" content="2019-04-03T13:17:21.006Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="友链(洛谷)">
-<meta name="twitter:description" content="以下都是各种大佬的友链(就我最菜了$qwq$) $AK   KING$ 伤病都毁不掉的天才 $AK$ 虐全场 信竞体育两不误 文体两开花 $f AK e$大佬 神仙 又帅又强的巨佬(矩阵加速巨佬) 数据结构、模板神仙(目前$A$了45模板题)(模板随便刷，刷着玩) 喜捷捷(详见这里) 假装AFO大佬 书法家 早期UP主(打打广告：bilibili) 次机打县 艺术就是派大星 体育健将 杰伦的小粉丝">
+<meta name="twitter:title" content="题解 P1276 【校门外的树（增强版）】">
+<meta name="twitter:description" content="首先提一下本题的几个容易忽略的坑点导致错误的地方吧1. 问最终校门外留下的树苗多少棵？  是不是一开始看到时就不经过脑子的直接输出校门口的树的棵数啦(其实题目有说一开始就存在的是树，后面种下去的是树苗)(然后你就会获得80或者20分的好成绩)，可能只有我一个人看错了吧$QWQ$ 2. 植树者种上又被砍掉的树苗有多少棵？  这个可能错的人比较少，它的意思是每逢砍树者把树苗砍了就把$ans++$，并不">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/03/友链-洛谷/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/08/题解-P1276-【校门外的树（增强版）】/">
 
 
 
@@ -128,7 +128,7 @@
   };
 </script>
 
-  <title>友链(洛谷) | 一个蒟蒻的Blog</title>
+  <title>题解 P1276 【校门外的树（增强版）】 | 一个蒟蒻的Blog</title>
   
 
 
@@ -326,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/03/友链-洛谷/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/08/题解-P1276-【校门外的树（增强版）】/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Charles·Jim">
@@ -343,7 +343,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">友链(洛谷)
+          <h1 class="post-title" itemprop="name headline">题解 P1276 【校门外的树（增强版）】
 
               
             
@@ -369,12 +369,24 @@
                 
               
 
-              <time title="创建时间：2019-04-03 20:50:03 / 修改时间：20:51:03" itemprop="dateCreated datePublished" datetime="2019-04-03T20:50:03+08:00">2019-04-03</time>
+              <time title="创建时间：2019-03-08 20:00:58" itemprop="dateCreated datePublished" datetime="2019-03-08T20:00:58+08:00">2019-03-08</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-03 21:17:21" itemprop="dateModified" datetime="2019-04-03T21:17:21+08:00">2019-04-03</time>
               
             
           </span>
@@ -408,7 +420,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">307</span>
+                <span title="本文字数">2.1k</span>
               
 
               
@@ -422,7 +434,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -442,33 +454,25 @@
       
 
       
-        <p>以下都是各种大佬的友链(就我最菜了$qwq$)</p>
-<p><a href="https://www.luogu.org/space/show?uid=115351" target="_blank" rel="noopener">$AK   KING$</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=22991" target="_blank" rel="noopener">伤病都毁不掉的天才</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=39484" target="_blank" rel="noopener">$AK$ 虐全场</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=27858" target="_blank" rel="noopener">信竞体育两不误</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=86874" target="_blank" rel="noopener">文体两开花</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=80299" target="_blank" rel="noopener">$f AK e$大佬</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=87026" target="_blank" rel="noopener">神仙</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=104379" target="_blank" rel="noopener">又帅又强的巨佬(矩阵加速巨佬)</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=60489" target="_blank" rel="noopener">数据结构、模板神仙(目前$A$了45模板题)(模板随便刷，刷着玩)</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=54260" target="_blank" rel="noopener">喜捷捷</a>(详见<a href="https://www.luogu.org/blog/heyuanjieaknoip/xi-jie-jie-yu-shua-ti" target="_blank" rel="noopener">这里</a>)</p>
-<p><a href="https://www.luogu.org/space/show?uid=32139" target="_blank" rel="noopener">假装AFO大佬</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=20504" target="_blank" rel="noopener">书法家</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=36107" target="_blank" rel="noopener">早期UP主</a>(打打广告：<a href="https://space.bilibili.com/33700044/video" target="_blank" rel="noopener">bilibili</a>)</p>
-<p><a href="https://www.luogu.org/space/show?uid=87075" target="_blank" rel="noopener"><del>次机打县</del></a></p>
-<p><a href="https://www.luogu.org/space/show?uid=86874" target="_blank" rel="noopener">艺术就是派大星</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=172612" target="_blank" rel="noopener">体育健将</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=73436" target="_blank" rel="noopener">杰伦的小粉丝</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=172536" target="_blank" rel="noopener"><del>作死</del>惨遭禁言的老哥</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=177308" target="_blank" rel="noopener">高一强者</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=172534" target="_blank" rel="noopener">强无敌</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=39146" target="_blank" rel="noopener">面向大海，春暖花开</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=40284" target="_blank" rel="noopener">全机房最强的人</a>和<a href="https://www.luogu.org/space/show?uid=185759" target="_blank" rel="noopener">他的小号</a>(发明了一种美妙的算法，可是机房太小写不下，他给这个算法取了一个好听的名字：$ckttt$)</p>
+        <h2 id="首先提一下本题的几个容易忽略的坑点导致错误的地方吧"><a href="#首先提一下本题的几个容易忽略的坑点导致错误的地方吧" class="headerlink" title="首先提一下本题的几个容易忽略的坑点导致错误的地方吧"></a>首先提一下本题的几个容易忽略的<del>坑点</del>导致错误的地方吧</h2><h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><blockquote>
+<p>问最终校门外留下的树苗多少棵？</p>
+</blockquote>
+<p>是不是一开始看到时就不经过脑子的直接输出校门口的树的棵数啦(其实题目有说一开始就存在的是树，后面种下去的是树苗)<del>(然后你就会获得80或者20分的好成绩)，可能只有我一个人看错了吧$QWQ$</del></p>
+<h3 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h3><blockquote>
+<p>植树者种上又被砍掉的树苗有多少棵？</p>
+</blockquote>
+<p>这个可能错的人比较少，它的意思是每逢砍树者把树苗砍了就把$ans++$，并不是在一个树坑中只能$ans++$一次</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h3><blockquote>
+<p>校门外马路上本来从编号0到$L$，每一编号的位置都有1棵树。</p>
+</blockquote>
+<p>把编号看错的应该不止我一个人吧(<del>试图自我安慰</del>)</p>
+<p>终上所述，审题一定要好好审，不然原来完全对的程序也会爆零(我才不会告诉你我为了找出这些坑点给洛谷提供了一页的提交记录呢)</p>
 <hr>
-<p>接下来是蒟蒻的友链</p>
-<p><a href="https://www.luogu.org/space/show?uid=185777" target="_blank" rel="noopener">本蒟蒻的小号</a></p>
-
+<h2 id="再养成一个好习惯"><a href="#再养成一个好习惯" class="headerlink" title="再养成一个好习惯"></a>再养成一个好习惯</h2><p>做题前先看看一下数据的大小</p>
+<p>这题的数据是$L（1 &lt;= L &lt;= 10000）$和 $N（1 &lt;= N &lt;= 100）$</p>
+<p>哎，$O(n^2)$的模拟好像可以$*$过去？</p>
+<p>那来吧，写模拟(可以写模拟的就不要写线段树了嘛，线段树那个码量不敢恭维)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> GCC optimize(3)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long<span class="comment">//随手long long好习惯</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> ll FFF=<span class="number">10000</span>+<span class="number">5</span>;</span><br><span class="line"></span><br><span class="line">ll l,n;</span><br><span class="line"><span class="keyword">bool</span> opt;<span class="comment">//判断是砍树还是种树</span></span><br><span class="line">ll a,b;</span><br><span class="line">ll flag[FFF];<span class="comment">//flag=1时是树(就是一开始就存在的)，flag=2时是树苗(就是后来种下的)，flag=0时是空气(空坑)</span></span><br><span class="line">ll ans_1,ans_2;<span class="comment">//ans_1记录最终校门外留下的树苗棵数，ans_2记录植树者种上又被砍掉的树苗棵数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//if(fopen(".in", "r"))</span></span><br><span class="line">    <span class="comment">//&#123;</span></span><br><span class="line">    <span class="comment">//	freopen(".in", "r", stdin);</span></span><br><span class="line">    <span class="comment">//	freopen(".out", "w", stdout);</span></span><br><span class="line">    <span class="comment">//&#125;</span></span><br><span class="line">    ios::sync_with_stdio(<span class="literal">false</span>);<span class="comment">//关闭流同步，让cin、cout变得和scanf、printf一样快</span></span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;l&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=l;++i)<span class="comment">//记住编号从0开始，到l结束</span></span><br><span class="line">    &#123;</span><br><span class="line">        flag[i]=<span class="number">1</span>;<span class="comment">//初始化，把树都种上</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;opt&gt;&gt;a&gt;&gt;b;</span><br><span class="line">        <span class="keyword">if</span>(opt==<span class="number">0</span>)<span class="comment">//如果是砍树</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=a;j&lt;=b;++j)<span class="comment">//那就砍呗，从a到b</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span>(flag[j]==<span class="number">2</span>)<span class="comment">//如果砍的是树苗</span></span><br><span class="line">                &#123;</span><br><span class="line">                    ans_2+=<span class="number">1</span>;<span class="comment">//ans_2++</span></span><br><span class="line">                &#125;</span><br><span class="line">                flag[j]=<span class="number">0</span>;<span class="comment">//让flag=0，即记为空坑</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span><span class="comment">//如果是种树</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=a;j&lt;=b;++j)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span>(flag[j]==<span class="number">0</span>)<span class="comment">//如果遇到一个空坑</span></span><br><span class="line">                &#123;</span><br><span class="line">                    flag[j]=<span class="number">2</span>;<span class="comment">//就把树苗种上，把flag变为2(注意，是树苗了，不能把flag变成1)</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=l;++i)<span class="comment">//最后处理</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(flag[i]==<span class="number">2</span>)<span class="comment">//如果校门口有树苗的话</span></span><br><span class="line">        &#123;</span><br><span class="line">            ans_1+=<span class="number">1</span>;<span class="comment">//ans_1++</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans_1&lt;&lt;<span class="built_in">endl</span>&lt;&lt;ans_2;<span class="comment">//输出，完结撒花</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -491,9 +495,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/友链/" rel="tag"># 友链</a>
-          
             <a href="/tags/洛谷/" rel="tag"># 洛谷</a>
+          
+            <a href="/tags/题解/" rel="tag"># 题解</a>
           
         </div>
       
@@ -506,8 +510,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/30/题解-CF776B-【Sherlock-and-his-girlfriend】/" rel="next" title="题解 CF776B 【Sherlock and his girlfriend】">
-                <i class="fa fa-chevron-left"></i> 题解 CF776B 【Sherlock and his girlfriend】
+              <a href="/2019/03/05/题解-CF773D-【Perishable-Roads】/" rel="next" title="题解 CF773D 【Perishable Roads】">
+                <i class="fa fa-chevron-left"></i> 题解 CF773D 【Perishable Roads】
               </a>
             
           </div>
@@ -515,6 +519,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/19/题解-P4305-【-JLOI2011-不重复数字】/" rel="prev" title="题解 P4305 【[JLOI2011]不重复数字】">
+                题解 P4305 【[JLOI2011]不重复数字】 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -559,8 +567,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -673,6 +690,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#首先提一下本题的几个容易忽略的坑点导致错误的地方吧"><span class="nav-number">1.</span> <span class="nav-text">首先提一下本题的几个容易忽略的坑点导致错误的地方吧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.1.</span> <span class="nav-text">1.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">1.2.</span> <span class="nav-text">2.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">1.3.</span> <span class="nav-text">3.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#再养成一个好习惯"><span class="nav-number">2.</span> <span class="nav-text">再养成一个好习惯</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

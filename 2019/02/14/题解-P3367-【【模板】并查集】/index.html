@@ -100,25 +100,27 @@
 
 
 
-  <meta name="description" content="以下都是各种大佬的友链(就我最菜了$qwq$) $AK   KING$ 伤病都毁不掉的天才 $AK$ 虐全场 信竞体育两不误 文体两开花 $f AK e$大佬 神仙 又帅又强的巨佬(矩阵加速巨佬) 数据结构、模板神仙(目前$A$了45模板题)(模板随便刷，刷着玩) 喜捷捷(详见这里) 假装AFO大佬 书法家 早期UP主(打打广告：bilibili) 次机打县 艺术就是派大星 体育健将 杰伦的小粉丝">
-<meta name="keywords" content="友链,洛谷">
+  <meta name="description" content="前言这道题是一道对初学者有点不太友好的题目，因为一开始可能有点难理解（理解之后可能还好），可是这道题又是一道初学者必须码的一道题（比如说我这种蒟蒻）  题意我们先理解一下题意，题目提供了两个正整数$n$，$m$,表示有$n$个元素，$m$次询问。接着他给了你$m$行询问，一行询问有$z$,$x$,$y$三个数。当$z$=1时，将$x$与$y$所在的集合合并;当$z$=2时，输出$x$与$y$是否在">
+<meta name="keywords" content="洛谷,题解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="友链(洛谷)">
-<meta property="og:url" content="http://yoursite.com/2019/04/03/友链-洛谷/index.html">
+<meta property="og:title" content="题解 P3367 【【模板】并查集】">
+<meta property="og:url" content="http://yoursite.com/2019/02/14/题解-P3367-【【模板】并查集】/index.html">
 <meta property="og:site_name" content="一个蒟蒻的Blog">
-<meta property="og:description" content="以下都是各种大佬的友链(就我最菜了$qwq$) $AK   KING$ 伤病都毁不掉的天才 $AK$ 虐全场 信竞体育两不误 文体两开花 $f AK e$大佬 神仙 又帅又强的巨佬(矩阵加速巨佬) 数据结构、模板神仙(目前$A$了45模板题)(模板随便刷，刷着玩) 喜捷捷(详见这里) 假装AFO大佬 书法家 早期UP主(打打广告：bilibili) 次机打县 艺术就是派大星 体育健将 杰伦的小粉丝">
+<meta property="og:description" content="前言这道题是一道对初学者有点不太友好的题目，因为一开始可能有点难理解（理解之后可能还好），可是这道题又是一道初学者必须码的一道题（比如说我这种蒟蒻）  题意我们先理解一下题意，题目提供了两个正整数$n$，$m$,表示有$n$个元素，$m$次询问。接着他给了你$m$行询问，一行询问有$z$,$x$,$y$三个数。当$z$=1时，将$x$与$y$所在的集合合并;当$z$=2时，输出$x$与$y$是否在">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-03T12:51:03.911Z">
+<meta property="og:image" content="https://cdn.luogu.org/upload/pic/51673.png">
+<meta property="og:updated_time" content="2019-04-03T13:22:24.122Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="友链(洛谷)">
-<meta name="twitter:description" content="以下都是各种大佬的友链(就我最菜了$qwq$) $AK   KING$ 伤病都毁不掉的天才 $AK$ 虐全场 信竞体育两不误 文体两开花 $f AK e$大佬 神仙 又帅又强的巨佬(矩阵加速巨佬) 数据结构、模板神仙(目前$A$了45模板题)(模板随便刷，刷着玩) 喜捷捷(详见这里) 假装AFO大佬 书法家 早期UP主(打打广告：bilibili) 次机打县 艺术就是派大星 体育健将 杰伦的小粉丝">
+<meta name="twitter:title" content="题解 P3367 【【模板】并查集】">
+<meta name="twitter:description" content="前言这道题是一道对初学者有点不太友好的题目，因为一开始可能有点难理解（理解之后可能还好），可是这道题又是一道初学者必须码的一道题（比如说我这种蒟蒻）  题意我们先理解一下题意，题目提供了两个正整数$n$，$m$,表示有$n$个元素，$m$次询问。接着他给了你$m$行询问，一行询问有$z$,$x$,$y$三个数。当$z$=1时，将$x$与$y$所在的集合合并;当$z$=2时，输出$x$与$y$是否在">
+<meta name="twitter:image" content="https://cdn.luogu.org/upload/pic/51673.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/03/友链-洛谷/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/14/题解-P3367-【【模板】并查集】/">
 
 
 
@@ -128,7 +130,7 @@
   };
 </script>
 
-  <title>友链(洛谷) | 一个蒟蒻的Blog</title>
+  <title>题解 P3367 【【模板】并查集】 | 一个蒟蒻的Blog</title>
   
 
 
@@ -326,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/03/友链-洛谷/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/14/题解-P3367-【【模板】并查集】/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Charles·Jim">
@@ -343,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">友链(洛谷)
+          <h1 class="post-title" itemprop="name headline">题解 P3367 【【模板】并查集】
 
               
             
@@ -369,12 +371,24 @@
                 
               
 
-              <time title="创建时间：2019-04-03 20:50:03 / 修改时间：20:51:03" itemprop="dateCreated datePublished" datetime="2019-04-03T20:50:03+08:00">2019-04-03</time>
+              <time title="创建时间：2019-02-14 10:52:21" itemprop="dateCreated datePublished" datetime="2019-02-14T10:52:21+08:00">2019-02-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-03 21:22:24" itemprop="dateModified" datetime="2019-04-03T21:22:24+08:00">2019-04-03</time>
               
             
           </span>
@@ -408,7 +422,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">307</span>
+                <span title="本文字数">2.1k</span>
               
 
               
@@ -422,7 +436,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -442,33 +456,82 @@
       
 
       
-        <p>以下都是各种大佬的友链(就我最菜了$qwq$)</p>
-<p><a href="https://www.luogu.org/space/show?uid=115351" target="_blank" rel="noopener">$AK   KING$</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=22991" target="_blank" rel="noopener">伤病都毁不掉的天才</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=39484" target="_blank" rel="noopener">$AK$ 虐全场</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=27858" target="_blank" rel="noopener">信竞体育两不误</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=86874" target="_blank" rel="noopener">文体两开花</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=80299" target="_blank" rel="noopener">$f AK e$大佬</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=87026" target="_blank" rel="noopener">神仙</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=104379" target="_blank" rel="noopener">又帅又强的巨佬(矩阵加速巨佬)</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=60489" target="_blank" rel="noopener">数据结构、模板神仙(目前$A$了45模板题)(模板随便刷，刷着玩)</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=54260" target="_blank" rel="noopener">喜捷捷</a>(详见<a href="https://www.luogu.org/blog/heyuanjieaknoip/xi-jie-jie-yu-shua-ti" target="_blank" rel="noopener">这里</a>)</p>
-<p><a href="https://www.luogu.org/space/show?uid=32139" target="_blank" rel="noopener">假装AFO大佬</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=20504" target="_blank" rel="noopener">书法家</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=36107" target="_blank" rel="noopener">早期UP主</a>(打打广告：<a href="https://space.bilibili.com/33700044/video" target="_blank" rel="noopener">bilibili</a>)</p>
-<p><a href="https://www.luogu.org/space/show?uid=87075" target="_blank" rel="noopener"><del>次机打县</del></a></p>
-<p><a href="https://www.luogu.org/space/show?uid=86874" target="_blank" rel="noopener">艺术就是派大星</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=172612" target="_blank" rel="noopener">体育健将</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=73436" target="_blank" rel="noopener">杰伦的小粉丝</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=172536" target="_blank" rel="noopener"><del>作死</del>惨遭禁言的老哥</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=177308" target="_blank" rel="noopener">高一强者</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=172534" target="_blank" rel="noopener">强无敌</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=39146" target="_blank" rel="noopener">面向大海，春暖花开</a></p>
-<p><a href="https://www.luogu.org/space/show?uid=40284" target="_blank" rel="noopener">全机房最强的人</a>和<a href="https://www.luogu.org/space/show?uid=185759" target="_blank" rel="noopener">他的小号</a>(发明了一种美妙的算法，可是机房太小写不下，他给这个算法取了一个好听的名字：$ckttt$)</p>
+        <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>这道题是一道对初学者有点不太友好的题目，因为一开始可能有点难理解<del>（理解之后可能还好）</del>，可是这道题又是一道初学者必须码的一道题<del>（比如说我这种蒟蒻）</del></p>
 <hr>
-<p>接下来是蒟蒻的友链</p>
-<p><a href="https://www.luogu.org/space/show?uid=185777" target="_blank" rel="noopener">本蒟蒻的小号</a></p>
-
+<h4 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h4><p>我们先理解一下题意，题目提供了两个正整数$n$，$m$,表示有$n$个元素，$m$次询问。接着他给了你$m$行询问，一行询问有$z$,$x$,$y$三个数。当$z$=1时，将$x$与$y$所在的集合合并;当$z$=2时，输出$x$与$y$是否在同一集合内，是的话输出$Y$；否则话输出$N$。</p>
+<hr>
+<h4 id="核心模板"><a href="#核心模板" class="headerlink" title="核心模板"></a>核心模板</h4><ol>
+<li><p>找爸爸</p>
+<p>$f[x]$是指$x$的爸爸（P.S. 一开始每个元素的爸爸就是它自己）</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">   	<span class="keyword">if</span>(f[x]==x)<span class="comment">//如果一个元素的爸爸就是它自己</span></span><br><span class="line">   	&#123;</span><br><span class="line">   		<span class="keyword">return</span> x;<span class="comment">//就直接返回它自身</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">else</span></span><br><span class="line">   	&#123;</span><br><span class="line">   		f[x]=find(f[x]);<span class="comment">//否则就接下去寻找，直到找到他的爸爸为止</span></span><br><span class="line">   	&#125;</span><br><span class="line">   	<span class="keyword">return</span> f[x];<span class="comment">//返回它的爸爸的值</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>合并（就是当z=1时）</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">work1</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">   	f[find(y)]=find(x);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p> 合并的本质就是使$x$和$y$的爸爸变成同一个爸爸<del>（逃</del><br> $find(x)$是找到$x$的爸爸，$f[find(y)]$是找到$y$爸爸的爸爸（它的祖先？雾。。。）并使他们相等，也就是让$x$和$y$的集合合并。<br> 原理见图：<br> <img src="https://cdn.luogu.org/upload/pic/51673.png" alt><br> 从图中可以看出，合并之后$x$和$y$就成为了兄弟，也就是在同一个集合内了（集合合并）  </p>
+</li>
+<li>查询（也就是当z=2的时候）</li>
+</ol>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">work2</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span><span class="comment">//查询</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	<span class="keyword">if</span>(find(x)==find(y))<span class="comment">//查询是否为同一个爸爸</span></span><br><span class="line">    	&#123;</span><br><span class="line">    		<span class="built_in">cout</span>&lt;&lt;<span class="string">"Y"</span>&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//是就输出“Y”</span></span><br><span class="line">    	&#125;</span><br><span class="line">    	<span class="keyword">else</span></span><br><span class="line">    	&#123;</span><br><span class="line">    		<span class="built_in">cout</span>&lt;&lt;<span class="string">"N"</span>&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//不是就输出“N”</span></span><br><span class="line">    	&#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>如果$x$和$y$的爸爸是同一个的话，那么$x$和$y$就是兄弟，也就是说$x$和$y$在同一集合中，所以输出$Y$，不然就输出$N$。</p>
+<hr>
+<p><del>把以上模板拼接一下，就是</del>AC代码<del>啦</del></p>
+<pre><code>#pragma GCC optimize(3)//O3优化不用管啦
+#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int n,m,z[666666],x[666666],y[666666];
+int f[666666];
+int find(int x)//找爸爸 
+{
+    if(f[x]==x)
+    {
+        return x;
+    }
+    else
+    {
+        f[x]=find(f[x]);
+    }
+    return f[x];
+}
+void work1(int x,int y)//合并
+{
+    f[find(y)]=find(x);
+}
+void work2(int x,int y)//查询
+{
+    if(find(x)==find(y))
+    {
+        cout&lt;&lt;&quot;Y&quot;&lt;&lt;endl;
+    }
+    else
+    {
+        cout&lt;&lt;&quot;N&quot;&lt;&lt;endl;
+    }
+}
+int main()
+{
+//    freopen(&quot;.in&quot;,&quot;r&quot;,stdin);
+//    freopen(&quot;.out&quot;,&quot;w&quot;,stdout);
+    ios::sync_with_stdio(false);//关闭同步使cin，cout变快
+    cin&gt;&gt;n&gt;&gt;m;
+    for(int i=1;i&lt;=m;i++)
+    {
+        cin&gt;&gt;z[i]&gt;&gt;x[i]&gt;&gt;y[i];
+        f[i]=i;
+    }
+    for(int i=1;i&lt;=m;i++)
+    {
+        if(z[i]==1)
+        {
+            work1(x[i],y[i]);
+        }
+        else
+        {
+            work2(x[i],y[i]);
+        }
+    }
+    return 0;//完结撒花
+}
+</code></pre>
       
     </div>
 
@@ -491,9 +554,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/友链/" rel="tag"># 友链</a>
-          
             <a href="/tags/洛谷/" rel="tag"># 洛谷</a>
+          
+            <a href="/tags/题解/" rel="tag"># 题解</a>
           
         </div>
       
@@ -506,15 +569,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/30/题解-CF776B-【Sherlock-and-his-girlfriend】/" rel="next" title="题解 CF776B 【Sherlock and his girlfriend】">
-                <i class="fa fa-chevron-left"></i> 题解 CF776B 【Sherlock and his girlfriend】
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/17/一些并不是洛谷题的题解（栈，队列）/" rel="prev" title="一些并不是洛谷题的题解（栈，队列）">
+                一些并不是洛谷题的题解（栈，队列） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -559,8 +622,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -673,6 +745,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#题意"><span class="nav-number">2.</span> <span class="nav-text">题意</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#核心模板"><span class="nav-number">3.</span> <span class="nav-text">核心模板</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
