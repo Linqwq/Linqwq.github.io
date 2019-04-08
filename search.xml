@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[题解 P1257 【平面上的最接近点对】]]></title>
+    <url>%2F2019%2F04%2F08%2F%E9%A2%98%E8%A7%A3-P1257-%E3%80%90%E5%B9%B3%E9%9D%A2%E4%B8%8A%E7%9A%84%E6%9C%80%E6%8E%A5%E8%BF%91%E7%82%B9%E5%AF%B9%E3%80%91%2F</url>
+    <content type="text"><![CDATA[分析题目中不是说了吗 那我们也要根据出题人的意图去写嘛(大雾 我们看一下数据范围 $ 2≤n≤10000 $ $emmm$，$O(n^2)$的好像可以$*$掉此题 这个时候，本题的一个坑点就出来了: $x$和$y$的范围呢？ 虽然我是随手$long\ long$的(这不是好习惯吗)，但是我还是试了一下不开$ long\ long $$(no\ zuo\ no\ die)$，然后。。。你会惊奇的发现 这是不开$ long\ long $的提交 这是开了$long\ long$的提交 你可以看到这是两份完全一样的程序，除了 12#define ll long long#define ll int 这个不同。 (十年$OI$一场空，没开$long\ long$见祖宗) 切入正题我们直接暴力枚举两个端点，并计算出它们之间的距离，用一个数$ ans $维护最小值 距离就简单的用勾股定理求就好了 代码+注释 如下： 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566#pragma GCC optimize(3)#include&lt;bits/stdc++.h&gt;#define ll intusing namespace std;#define getchar() (p1 == p2 &amp;&amp; (p2 = (p1 = buf) + fread(buf, 1, 1 &lt;&lt; 21, stdin), p1 == p2) ? EOF : *p1++)char buf[1 &lt;&lt; 21], *p1 = buf, *p2 = buf;template &lt; class T &gt; inline void read(T &amp;x)&#123; x = 0; char c = getchar(); bool f = 0; for (; !isdigit(c); c = getchar()) f ^= c == '-'; for (; isdigit(c); c = getchar()) x = (x &lt;&lt; 3) + (x &lt;&lt; 1) + (c ^ 48); x = f ? -x : x;&#125;#undef getchar()template &lt; class T &gt; inline void write(T x)&#123; if (x &lt; 0) putchar('-'), x = -x; if (x &gt; 9) write(x / 10); putchar(x % 10 + 48);&#125;const ll FFF=10000+5;const ll inf=0x7fffffff;ll n;ll ans=inf;//定义+设置初始值struct node&#123; ll x,y;&#125;dian[FFF];//点(拼音看得懂的吧)，x、y是这个点的横纵坐标ll dis(ll x1,ll x2,ll y1,ll y2)//勾股定理(P.S. 其实这里可以不用直接开方，直接比较距离的平方，最后再开方)&#123; return (x1-x2)*(x1-x2)+(y1-y2)*(y1-y2);&#125;int main()&#123; if(fopen("hhh.in", "r")) &#123; freopen("hhh.in", "r", stdin); freopen("hhh.out", "w", stdout); &#125; ios::sync_with_stdio(false); read(n); for(int i=1;i&lt;=n;++i) &#123; read(dian[i].x); read(dian[i].y); &#125; for(int i=1;i&lt;=n;++i) &#123; for(int j=i+1;j&lt;=n;++j) &#123; ans=min(dis(dian[i].x,dian[j].x,dian[i].y,dian[j].y),ans);//暴力枚举并维护 &#125; &#125; printf("%0.4lf",(double)sqrt(ans)); return 0;&#125; (码风邪教，勿介) 总的来说，这道题毕竟是道，还是比较简单的]]></content>
+      <tags>
+        <tag>洛谷</tag>
+        <tag>题解</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[友链(洛谷)]]></title>
     <url>%2F2019%2F04%2F03%2F%E5%8F%8B%E9%93%BE-%E6%B4%9B%E8%B0%B7%2F</url>
     <content type="text"><![CDATA[以下都是各种大佬的友链(就我最菜了$qwq$) $AK KING$ 伤病都毁不掉的天才 $AK$ 虐全场 信竞体育两不误 文体两开花 $f AK e$大佬 神仙 又帅又强的巨佬(矩阵加速巨佬) 数据结构、模板神仙(目前$A$了57模板题)(模板随便刷，刷着玩) 喜捷捷(详见这里) 假装AFO大佬 有点强的奆佬 早期UP主(打打广告：bilibili) 次机打县 艺术就是派大星 体育健将 杰伦的小粉丝 作死惨遭禁言的老哥 高一强者 强无敌 面向大海，春暖花开 全机房最强的人和他的小号(发明了一种美妙的算法，可是机房太小写不下，他给这个算法取了一个好听的名字：$ckttt$) 接下来是蒟蒻的友链 本蒟蒻的小号]]></content>
